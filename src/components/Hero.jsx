@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import { FaGithub, FaWhatsapp } from 'react-icons/fa'
 import { HiDownload } from 'react-icons/hi'
-import heroImage from '../assets/hero-placeholder.png'
+import heroImage from '../assets/abdullaahi-hassan.jpeg'
 
 const developerTitle = 'Junior Full Stack Developer'
 
@@ -40,7 +40,7 @@ function Hero() {
           initial={{ opacity: 0, y: 18 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.55, ease: 'easeOut' }}
-          className="order-2 text-center lg:order-1 lg:text-left"
+          className="order-1 text-center lg:text-left"
         >
           <p className="mb-3 font-heading text-xl font-medium text-text sm:text-2xl">
             Hi, I&apos;m
@@ -99,7 +99,7 @@ function Hero() {
           initial={{ opacity: 0, scale: 0.97 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.55, ease: 'easeOut', delay: 0.1 }}
-          className="order-1 mx-auto w-full max-w-sm lg:order-2 lg:max-w-md"
+          className="order-2 mx-auto w-full max-w-sm lg:max-w-md"
         >
           <div className="relative mx-auto aspect-[4/5] overflow-hidden rounded-[2rem] border border-primary/40 bg-card shadow-[0_0_70px_rgba(37,99,235,0.2)]">
             <div className="absolute inset-5 rounded-[1.5rem] border border-white/10" aria-hidden="true" />

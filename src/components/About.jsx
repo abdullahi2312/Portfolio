@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import profileImage from '../assets/hero-placeholder.png'
+import profileImage from '../assets/abdullaahi-hassan.jpeg'
 
 const informationCards = [
   {

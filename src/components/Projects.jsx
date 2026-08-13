@@ -1,28 +1,31 @@
 import { motion } from 'framer-motion'
 import { FaGithub } from 'react-icons/fa'
 import { FiExternalLink } from 'react-icons/fi'
-import analyticsImage from '../assets/project-analytics.png'
-import commerceImage from '../assets/project-commerce.png'
-import managerImage from '../assets/project-manager.png'
+import businessImage from '../assets/project-business.png'
+import ecommerceImage from '../assets/project-ecommerce.png'
+import realEstateImage from '../assets/project-real-estate.png'
 
 const projects = [
   {
-    name: 'MERN Commerce',
-    description: 'A full-stack shopping platform with product discovery, cart management, and a streamlined checkout experience.',
-    image: commerceImage,
-    technologies: ['React', 'Node.js', 'Express.js', 'MongoDB'],
+    name: 'Real Estate',
+    description: 'A modern real estate platform for discovering properties, exploring listings, and finding the perfect home.',
+    image: realEstateImage,
+    technologies: ['React', 'Tailwind CSS', 'Responsive Design'],
+    liveUrl: 'https://real-estate-bay-rho.vercel.app/',
   },
   {
-    name: 'Project Manager',
-    description: 'A collaborative project workspace for organizing tasks, tracking progress, and managing team workflows.',
-    image: managerImage,
-    technologies: ['React', 'Tailwind CSS', 'Node.js', 'MongoDB'],
+    name: 'E-commerce',
+    description: 'A clean online store with product browsing, categories, customer accounts, and a modern shopping experience.',
+    image: ecommerceImage,
+    technologies: ['React', 'Tailwind CSS', 'E-commerce'],
+    liveUrl: 'https://e-commerce-iota-ashen-85.vercel.app/',
   },
   {
-    name: 'Analytics Dashboard',
-    description: 'A responsive business dashboard that presents key metrics, sales trends, and recent activity clearly.',
-    image: analyticsImage,
-    technologies: ['React', 'JavaScript', 'Express.js', 'MongoDB'],
+    name: 'Business Management',
+    description: 'A professional business platform presenting services, products, growth insights, and company information.',
+    image: businessImage,
+    technologies: ['React', 'Tailwind CSS', 'Business Website'],
+    liveUrl: 'https://business-eta-seven.vercel.app/',
   },
 ]
 
@@ -33,7 +36,7 @@ function Projects() {
         <h2 className="section-heading text-center text-text">Featured Projects</h2>
 
         <div className="mt-10 grid gap-7 md:grid-cols-2 xl:grid-cols-3">
-          {projects.map(({ name, description, image, technologies }) => (
+          {projects.map(({ name, description, image, technologies, liveUrl }) => (
             <motion.article
               key={name}
               whileHover={{ y: -7 }}
@@ -66,7 +69,13 @@ function Projects() {
                 </ul>
 
                 <div className="mt-6 flex flex-wrap gap-3">
-                  <a href="#" className="button-primary flex-1 gap-2" aria-label={`View ${name} live demo`}>
+                  <a
+                    href={liveUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="button-primary flex-1 gap-2"
+                    aria-label={`View ${name} live demo`}
+                  >
                     <FiExternalLink aria-hidden="true" />
                     Live Demo
                   </a>
