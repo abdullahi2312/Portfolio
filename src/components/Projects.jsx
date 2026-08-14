@@ -74,10 +74,10 @@ function Projects() {
                     target="_blank"
                     rel="noreferrer"
                     className="button-primary flex-1 gap-2"
-                    aria-label={`View ${name} live demo`}
+                    aria-label={`View ${name} live`}
                   >
                     <FiExternalLink aria-hidden="true" />
-                    Live Demo
+                    Live
                   </a>
                   <a
                     href="https://github.com/abdullahi2312"
