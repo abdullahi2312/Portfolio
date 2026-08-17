@@ -79,16 +79,7 @@ function Projects() {
                     <FiExternalLink aria-hidden="true" />
                     Live
                   </a>
-                  <a
-                    href="https://github.com/abdullahi2312"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="button-secondary flex-1 gap-2"
-                    aria-label={`View ${name} source code on GitHub`}
-                  >
-                    <FaGithub aria-hidden="true" />
-                    GitHub
-                  </a>
+              
                 </div>
               </div>
             </motion.article>

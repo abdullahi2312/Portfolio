@@ -22,24 +22,14 @@ function Footer() {
               <h2 className="mt-3 font-heading text-xl font-semibold text-text">
                 Abdullaahi Hassan
               </h2>
-              <p className="mt-1 text-text/65">Junior Full Stack Developer</p>
+              <p className="mt-1 text-text/65">Full Stack Developer</p>
               <p className="mt-4 text-sm text-text/50">Built with React + Tailwind CSS</p>
             </div>
 
             <div>
               <h3 className="font-heading font-semibold text-text">Quick Links</h3>
               <ul className="mt-4 space-y-3 text-text/65">
-                <li>
-                  <a
-                    href="https://github.com/abdullahi2312"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="inline-flex items-center gap-2 hover:text-primary"
-                  >
-                    <FaGithub aria-hidden="true" />
-                    GitHub
-                  </a>
-                </li>
+
                 <li>
                   <a
                     href={whatsappUrl}

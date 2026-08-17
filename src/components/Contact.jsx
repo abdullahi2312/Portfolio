@@ -42,15 +42,7 @@ function Contact() {
                 <FaWhatsapp className="text-lg" aria-hidden="true" />
                 Chat on WhatsApp
               </a>
-              <a
-                href="https://github.com/abdullahi2312"
-                target="_blank"
-                rel="noreferrer"
-                className="button-secondary gap-2"
-              >
-                <FaGithub className="text-lg" aria-hidden="true" />
-                View GitHub
-              </a>
+             
             </div>
           </div>
 

@@ -4,7 +4,7 @@ import { FaGithub, FaWhatsapp } from 'react-icons/fa'
 import { HiDownload } from 'react-icons/hi'
 import heroImage from '../assets/abdullaahi-hassan.jpeg'
 
-const developerTitle = 'Junior Full Stack Developer'
+const developerTitle = 'Full Stack Developer'
 
 function Hero() {
   const [typedTitle, setTypedTitle] = useState('')
@@ -73,26 +73,6 @@ function Hero() {
             </a>
           </div>
 
-          <div className="mt-8 flex items-center justify-center gap-4 lg:justify-start">
-            <a
-              href="https://github.com/abdullahi2312"
-              target="_blank"
-              rel="noreferrer"
-              className="grid size-11 place-items-center rounded-full border border-white/15 bg-card text-xl text-text"
-              aria-label="Visit Abdullaahi Hassan on GitHub"
-            >
-              <FaGithub aria-hidden="true" />
-            </a>
-            <a
-              href="https://wa.me/252612666168?text=Hello%20Abdullaahi%20Hassan"
-              target="_blank"
-              rel="noreferrer"
-              className="grid size-11 place-items-center rounded-full border border-white/15 bg-card text-xl text-text"
-              aria-label="Message Abdullaahi Hassan on WhatsApp"
-            >
-              <FaWhatsapp aria-hidden="true" />
-            </a>
-          </div>
         </motion.div>
 
         <motion.div
